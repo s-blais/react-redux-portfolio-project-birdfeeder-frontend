@@ -5,10 +5,14 @@ class DayDisplay extends React.Component {
 
   birdThumbnails = (ids) => {
     return (
-      ids.map(id => {
-        const bird = this.props.birds.find(b => b.id == id)
+      ids.map((id, idx) => {
+        const bird = this.props.birds.find(b => b.id === id.toString()) // toString cleans up warnings
         const url = bird.attributes.image_url.replace("nas_bird_teaser_illustration", "bird_illustration")
-        return <img src={url} style={{maxHeight: "60px", maxWidth: "60px", margin: "5px 5px 10px 10px"}} />
+        return <img 
+          src={url} 
+          style={{maxHeight: "60px", maxWidth: "60px", margin: "5px 5px 10px 10px"}} 
+          key={idx} 
+          alt={bird.attributes.name} />
       })
     )
   }
@@ -16,7 +20,7 @@ class DayDisplay extends React.Component {
   render() {
     return (
       <div>
-        <b>{ this.props.day.attributes.date }</b>
+        <h3>{ this.props.day.attributes.date }</h3>
         <br />
         { this.birdThumbnails(this.props.day.attributes.birds_ids) }
       </div>
