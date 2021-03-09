@@ -1,1 +1,1 @@
-Please refer to the README in my backend repo, [here](https://github.com/s-blais/react-redux-portfolio-project-birdfeeder-backend). Thanks!
+Please refer to the README in this app's backend repo, [here](https://github.com/s-blais/react-redux-portfolio-project-birdfeeder-backend). Thanks!
