@@ -6,8 +6,8 @@ export default function Nav() {
     <div>
       <ul style={{listStyle: 'none'}}>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/birds'>Birds</Link></li>
-        <li><Link to='/days'>Days</Link></li>
+        <li><Link to='/birds'>Birds Library</Link></li>
+        <li><Link to='/days'>Sightings by Day</Link></li>
       </ul>
     </div>
   )

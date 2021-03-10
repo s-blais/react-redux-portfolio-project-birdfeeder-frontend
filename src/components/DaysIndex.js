@@ -7,7 +7,7 @@ class DaysIndex extends React.Component {
   render() {  
     return (
       <div>
-        <h1>Days Index</h1>
+        <h1>Sightings by Day</h1>
         <Link to='/days/new'>Record a day's sightings</Link>
         { this.props.days.map(day => <DayDisplay day={day} key={day.id} />)}
       </div>

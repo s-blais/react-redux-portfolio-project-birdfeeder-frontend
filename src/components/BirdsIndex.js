@@ -6,7 +6,7 @@ class BirdsIndex extends React.Component {
   render() {  
     return (
       <div>
-        <h1>Birds Index</h1>
+        <h1>Birds Library</h1>
         { this.props.birds.map(bird => <BirdCard bird={bird} key={bird.id} />)}
       </div>
     )
