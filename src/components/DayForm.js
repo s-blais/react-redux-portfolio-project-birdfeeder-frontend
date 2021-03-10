@@ -27,7 +27,13 @@ class DayForm extends React.Component {
       <div>
         <h1>Record Day's Sightings</h1>
         <form onSubmit={this.handleSubmit}>
-          Date: <input type="text" name="date" placeholder={this.defaultToday()} onChange={this.handleChange} />
+          Date: <input 
+            type="text" 
+            name="date" 
+            placeholder={this.defaultToday()} 
+            onChange={this.handleChange} 
+            value={this.state.date} 
+          />
           <input type="submit" value="record day" />
         </form>
       </div>
