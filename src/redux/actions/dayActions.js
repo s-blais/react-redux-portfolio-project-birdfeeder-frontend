@@ -7,3 +7,17 @@ export const fetchDays = () => {
     )
   }
 }
+
+export const createDay = dayData => {
+  return dispatch => {
+    const newDay = {day: dayData}
+    fetch('http://localhost:3001/api/v1/days', {
+      method: 'POST', 
+      headers: {"Content-Type": "application/json"}, 
+      body: JSON.stringify(newDay)
+    })
+      .then(response => response.json())
+      .then(newDayJson => dispatch({ type: 'CREATE_DAY_SUCCESS', payload: newDayJson.data})
+    )
+  }
+}
