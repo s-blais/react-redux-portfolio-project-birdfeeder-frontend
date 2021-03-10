@@ -2,9 +2,8 @@ export const fetchDays = () => {
   return (dispatch) => {
     dispatch({ type: 'LOADING_DAYS' })
     fetch('http://localhost:3001/api/v1/days')
-      .then(response => response.json())
-      .then(daysjson => dispatch({ type: 'FETCH_DAYS_SUCCESS', payload: daysjson.data})
-    )
+    .then(response => response.json())
+    .then(daysjson => dispatch({ type: 'FETCH_DAYS_SUCCESS', payload: daysjson.data}))
   }
 }
 
@@ -16,8 +15,7 @@ export const createDay = dayData => {
       headers: {"Content-Type": "application/json"}, 
       body: JSON.stringify(newDay)
     })
-      .then(response => response.json())
-      .then(newDayJson => dispatch({ type: 'CREATE_DAY_SUCCESS', payload: newDayJson.data})
-    )
+    .then(response => response.json())
+    .then(newDayJson => dispatch({ type: 'CREATE_DAY_SUCCESS', payload: newDayJson.data}))
   }
 }
