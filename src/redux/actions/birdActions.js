@@ -7,3 +7,17 @@ export const fetchBirds = () => {
     )
   }
 }
+
+export const createBird = birdData => {
+  return dispatch => {
+    const newBird = {bird: birdData}
+    fetch('http://localhost:3001/api/v1/birds', {
+      method: 'POST', 
+      headers: {"Content-Type": "application/json"}, 
+      body: JSON.stringify(newBird)
+    })
+      .then(response => response.json())
+      .then(newBirdJson => dispatch({ type: 'CREATE_BIRD_SUCCESS', payload: newBirdJson.data})
+    )
+  }
+}
