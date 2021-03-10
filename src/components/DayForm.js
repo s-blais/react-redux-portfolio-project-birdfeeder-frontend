@@ -9,16 +9,16 @@ class DayForm extends React.Component {
     // birds: []
   }
 
-  today = () => new Date().toISOString().substring(0,10)
   setToday = e => {
     e.preventDefault()
-    document.querySelector("input[name='date']").value = this.today()
+    const today = new Date().toISOString().substring(0,10)
+    document.querySelector("input[name='date']").value = today
   }
   
-  yesterday = () => new Date(new Date().setDate(new Date().getDate()-1)).toISOString().substring(0,10)
   setYesterday = e => {
     e.preventDefault()
-    document.querySelector("input[name='date']").value = this.yesterday()
+    const yesterday = new Date(new Date().setDate(new Date().getDate()-1)).toISOString().substring(0,10)
+    document.querySelector("input[name='date']").value = yesterday
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
