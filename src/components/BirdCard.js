@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const cardStyle = {
   width: "140px",
@@ -19,13 +20,15 @@ const imageStyle= {
 export default function BirdCard(props) {
 
   return (
-    <div style={cardStyle}>
-      <img src={props.bird.attributes.image_url} 
-        style={imageStyle} 
-        alt={props.bird.attributes.name} />
-      <br />
-      <b>{props.bird.attributes.name}</b>
-    </div>
+    <Link to={`/birds/${props.bird.id}`}>
+      <div style={cardStyle}>
+        <img src={props.bird.attributes.image_url} 
+          style={imageStyle} 
+          alt={props.bird.attributes.name} />
+        <br />
+        <b>{props.bird.attributes.name}</b>
+      </div>
+    </Link>
   )
 
 }
