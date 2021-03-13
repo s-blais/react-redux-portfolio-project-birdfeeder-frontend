@@ -11,6 +11,8 @@ class BirdsIndex extends React.Component {
     return (
       <Switch>
         <Route path={`${this.props.match.url}/new`} component={BirdForm} />
+        {/* tried the below to resolve the nested/params refresh issue, but no good (see also BirdShow) */}
+        {/* <Route path={`${this.props.match.url}/:birdId`} render={(props) => <BirdShow birdId={props} />} /> */}
         <Route path={`${this.props.match.url}/:birdId`} component={BirdShow}/>
         <Route exact path={this.props.match.url} render={() => (
           <div>
