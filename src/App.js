@@ -7,8 +7,6 @@ import Home from './components/Home'
 import BirdsIndex from './components/BirdsIndex'
 import DaysIndex from './components/DaysIndex'
 import DayForm from './components/DayForm'
-import BirdForm from './components/BirdForm'
-import BirdShow from './components/BirdShow'
 import { connect } from 'react-redux'
 import { fetchBirds } from './redux/actions/birdActions'
 import { fetchDays } from './redux/actions/dayActions'
@@ -27,9 +25,7 @@ class App extends React.Component {
           <Nav />
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/birds' component={BirdsIndex} />
-            <Route exact path='/birds/new' component={BirdForm} />
-            <Route path='/birds/:birdId' component={BirdShow}/>
+            <Route path='/birds' component={BirdsIndex} />
             <Route path='/days/new' component={DayForm} />
             <Route path='/days' component={DaysIndex} />
           </Switch>
