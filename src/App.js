@@ -4,7 +4,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Nav from './components/Nav'
 import Home from './components/Home'
-import BirdsIndex from './components/BirdsIndex'
+import BirdsContainer from './components/BirdsContainer'
 import DaysIndex from './components/DaysIndex'
 import { connect } from 'react-redux'
 import { fetchBirds } from './redux/actions/birdActions'
@@ -24,7 +24,7 @@ class App extends React.Component {
           <Nav />
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/birds' component={BirdsIndex} />
+            <Route path='/birds' component={BirdsContainer} />
             <Route path='/days' component={DaysIndex} />
           </Switch>
         </Router>
