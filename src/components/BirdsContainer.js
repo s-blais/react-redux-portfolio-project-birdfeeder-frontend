@@ -4,7 +4,6 @@ import BirdShow from './BirdShow'
 import BirdsLibrary from './BirdsLibrary'
 import { connect } from 'react-redux'
 import { Route, Switch } from 'react-router-dom';
-import { Link } from 'react-router-dom'
 
 class BirdsContainer extends React.Component {
   render() {  
