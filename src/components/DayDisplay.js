@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 class DayDisplay extends React.Component {
 
@@ -7,11 +8,14 @@ class DayDisplay extends React.Component {
     return (
       ids.map((id, idx) => {
         const bird = this.props.birds.find(b => b.id === id.toString()) // toString cleans up warnings
-        return <img 
-          src={bird.attributes.image_url} 
-          style={{maxHeight: "60px", maxWidth: "60px", margin: "5px 5px 10px 10px"}} 
-          key={idx} 
-          alt={bird.attributes.name} />
+        return (
+          <Link to={`/birds/${id}`} key={idx} >
+            <img 
+              src={bird.attributes.image_url} 
+              style={{maxHeight: "60px", maxWidth: "60px", margin: "5px 5px 10px 10px"}} 
+              alt={bird.attributes.name} />
+          </Link>
+          )
       })
     )
   }
