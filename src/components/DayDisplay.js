@@ -22,7 +22,7 @@ class DayDisplay extends React.Component {
       <div>
         <h3>{ this.props.day.attributes.date }</h3>
         <br />
-        { this.birdThumbnails(this.props.day.attributes.birds_ids) }
+        { this.birdThumbnails(this.props.day.attributes.bird_ids) }
       </div>
     ) 
   }
