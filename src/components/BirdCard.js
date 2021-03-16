@@ -19,10 +19,12 @@ const imageStyle= {
 
 export default function BirdCard(props) {
 
+  const url = props.bird.attributes.image_url.replace("bird_illustration", "nas_bird_teaser_illustration")
+
   return (
     <Link to={`/birds/${props.bird.id}`}>
       <div style={cardStyle}>
-        <img src={props.bird.attributes.image_url} 
+        <img src={url} 
           style={imageStyle} 
           alt={props.bird.attributes.name} />
         <br />

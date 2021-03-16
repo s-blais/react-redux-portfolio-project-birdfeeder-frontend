@@ -3,12 +3,12 @@ import { connect } from 'react-redux'
 
 const BirdShow = (props) => {
 
-  // console.log(props.match)
-  // return null
+  const url = props.bird.attributes.image_url.replace("bird_illustration", "nas_bird_teaser_illustration")
+
   return (
     <div>
       <h1>Bird Detail</h1>
-      <img src={props.bird.attributes.image_url} 
+      <img src={url} 
         alt={props.bird.attributes.name} />
       <br />
       <b>{props.bird.attributes.name}</b>

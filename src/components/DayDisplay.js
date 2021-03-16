@@ -7,9 +7,8 @@ class DayDisplay extends React.Component {
     return (
       ids.map((id, idx) => {
         const bird = this.props.birds.find(b => b.id === id.toString()) // toString cleans up warnings
-        const url = bird.attributes.image_url.replace("nas_bird_teaser_illustration", "bird_illustration")
         return <img 
-          src={url} 
+          src={bird.attributes.image_url} 
           style={{maxHeight: "60px", maxWidth: "60px", margin: "5px 5px 10px 10px"}} 
           key={idx} 
           alt={bird.attributes.name} />
