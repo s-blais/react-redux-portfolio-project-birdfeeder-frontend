@@ -50,6 +50,10 @@ class BirdForm extends React.Component {
           /><br />
           <input type="submit" value="add bird to library" />
         </form>
+        <p>First, find the bird at <a href="https://www.audubon.org/bird-guide" target="_blank" rel="noreferrer">audubon.org</a></p>
+        <p>Enter the bird's name</p>
+        <p>Copy & paste the bird's page URL</p>
+        <p>Copy & paste the bird's illustration URL</p>
       </div>
 
     )

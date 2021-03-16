@@ -1,6 +1,7 @@
 import React from 'react'
 import { createDay } from '../redux/actions/dayActions'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import DayBirdCheckbox from './DayBirdCheckbox'
 
 class DayForm extends React.Component {
@@ -82,6 +83,7 @@ class DayForm extends React.Component {
           <br />
           {this.createCheckboxes()}
         </form>
+        <h4>New bird(s) at the birdfeeder? <Link to='/birds/new'>Start here!</Link></h4>
       </div>
     )
   }

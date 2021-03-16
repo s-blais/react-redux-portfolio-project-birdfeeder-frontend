@@ -12,7 +12,7 @@ const BirdShow = (props) => {
         alt={props.bird.attributes.name} />
       <br />
       <h3>{props.bird.attributes.name}</h3>
-      <h5><a href={`${props.bird.attributes.audubon_url}`} target="_blank">More info from Audubon.org</a></h5>
+      <h5><a href={`${props.bird.attributes.audubon_url}`}  rel="noreferrer">More info from Audubon.org</a></h5>
 
     </div>
   )

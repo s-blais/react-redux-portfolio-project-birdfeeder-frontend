@@ -13,7 +13,8 @@ class DayDisplay extends React.Component {
             <img 
               src={bird.attributes.image_url} 
               style={{maxHeight: "60px", maxWidth: "60px", margin: "5px 5px 10px 10px"}} 
-              alt={bird.attributes.name} />
+              alt={bird.attributes.name} 
+              title={bird.attributes.name} />
           </Link>
           )
       })
