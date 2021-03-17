@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
       <ul style={{listStyle: 'none'}}>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/birds'>Birds Library</Link></li>
-        <li><Link to='/days'>Sightings by Day</Link></li>
+        <li><Link to='/days'>Days Recorded</Link></li>
       </ul>
     </div>
   )

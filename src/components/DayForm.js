@@ -83,7 +83,7 @@ class DayForm extends React.Component {
           <br />
           {this.createCheckboxes()}
         </form>
-        <h4>New bird(s) at the birdfeeder? <Link to='/birds/new'>Start here!</Link></h4>
+        <h4>New bird(s) at the birdfeeder not listed above? <Link to='/birds/new'>Start here!</Link></h4>
       </div>
     )
   }
