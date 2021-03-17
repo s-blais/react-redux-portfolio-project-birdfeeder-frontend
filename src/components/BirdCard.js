@@ -17,7 +17,7 @@ const imageStyle= {
   borderRadius: "5px"
 }
 
-export default function BirdCard(props) {
+const BirdCard = (props) => {
 
   const url = props.bird.attributes.image_url.replace("bird_illustration", "nas_bird_teaser_illustration")
 
@@ -34,3 +34,5 @@ export default function BirdCard(props) {
   )
 
 }
+
+export default BirdCard

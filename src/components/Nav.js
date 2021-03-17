@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Nav() {
+ const Nav = () => {
   return (
     <div>
       <ul style={{listStyle: 'none'}}>
@@ -12,3 +12,5 @@ export default function Nav() {
     </div>
   )
 }
+
+export default Nav
