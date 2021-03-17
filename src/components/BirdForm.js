@@ -20,6 +20,7 @@ class BirdForm extends React.Component {
       audubon_url: "",
       image_url: ""
     })
+    this.props.history.push("/birds")
   }
 
   render() {

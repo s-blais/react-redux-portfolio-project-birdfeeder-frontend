@@ -61,8 +61,8 @@ class DayForm extends React.Component {
     this.props.createDay(dayData)
     this.setState({
       date: ""
-      // birds: []
     })
+    this.props.history.push("/days")
   }
 
   render() {
