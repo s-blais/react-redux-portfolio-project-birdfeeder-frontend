@@ -70,7 +70,8 @@ class DayForm extends React.Component {
       <div>
         <h1>Record Day's Sightings</h1>
         <form onSubmit={this.handleSubmit}>
-          Date: <input 
+          <label htmlFor="date">Date: </label>&thinsp;
+          <input 
             type="text" 
             name="date" 
             placeholder="YYYY-MM-DD" 
@@ -79,9 +80,8 @@ class DayForm extends React.Component {
           />&thinsp;
           <button onClick={this.setToday}>today</button>&thinsp;<button onClick={this.setYesterday}>yesterday</button>
           <br />
-          <input type="submit" value="record day" />
-          <br />
           {this.createCheckboxes()}
+          <input type="submit" value="save day" />
         </form>
         <h4>New bird(s) at the birdfeeder not listed above? <Link to='/birds/new'>Start here!</Link></h4>
       </div>

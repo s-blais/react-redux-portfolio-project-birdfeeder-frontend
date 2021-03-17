@@ -25,8 +25,8 @@ class DayDisplay extends React.Component {
     return (
       <div>
         <h3>{ this.props.day.attributes.date }</h3>
-        <br />
         { this.birdThumbnails(this.props.day.attributes.bird_ids) }
+        <hr />
       </div>
     ) 
   }
