@@ -66,7 +66,7 @@ class DayForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>Record Day's Sightings</h1>
+        <h2>Record Day's Sightings</h2>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="date">Date: </label>&thinsp;
           <input 

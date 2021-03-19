@@ -7,7 +7,7 @@ const BirdShow = (props) => {
 
   return (
     <div>
-      <h1>Bird Detail</h1>
+      <h2>Bird Detail</h2>
       <img src={url} 
         alt={props.bird.attributes.name} />
       <br />

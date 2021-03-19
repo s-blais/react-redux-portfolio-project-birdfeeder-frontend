@@ -19,6 +19,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1><span className="flip-bird">&#128038;</span> Birdfeeder &#128038;</h1>
         <Router>
           <Nav />
           <Switch>

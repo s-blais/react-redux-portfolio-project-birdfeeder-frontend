@@ -26,7 +26,7 @@ class BirdForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>Add Bird to Library</h1>
+        <h2>Add Bird to Library</h2>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name: </label>&thinsp;
           <input 
