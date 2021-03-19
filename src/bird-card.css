@@ -1,0 +1,15 @@
+.bird-card {
+  width: 140px;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e0e0e0;
+  display: inline-block;
+}
+
+.bird-card img {
+  max-width: 130px;
+  max-height: 150px;
+  border-radius: 5px;
+}
