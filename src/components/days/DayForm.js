@@ -1,5 +1,5 @@
 import React from 'react'
-import { createDay } from '../redux/actions/dayActions'
+import { createDay } from '../../redux/actions/dayActions'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import DayBirdCheckbox from './DayBirdCheckbox'

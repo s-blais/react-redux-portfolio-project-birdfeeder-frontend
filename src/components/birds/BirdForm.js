@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBird } from '../redux/actions/birdActions'
+import { createBird } from '../../redux/actions/birdActions'
 import { connect } from 'react-redux'
 
 class BirdForm extends React.Component {
