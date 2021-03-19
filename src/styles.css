@@ -13,3 +13,8 @@
   max-height: 150px;
   border-radius: 5px;
 }
+
+.flip-bird {
+  transform: scale(-1,1);
+  display: inline-block;
+}
