@@ -16,12 +16,9 @@ const BirdShow = (props) => {
 
     </div>
   )
-
 }
 
 const mapStateToProps = (state, ownProps) => {
-  // tried the below to resolve the nested/params refresh issue, but no good (see also BirdsIndex)
-  // const bird = state.birds.find(bird => bird.id.toString() === ownProps.birdId.match.params.birdId)
   const bird = state.birds.find(bird => bird.id.toString() === ownProps.match.params.birdId)
   if (bird) {
     return { bird }

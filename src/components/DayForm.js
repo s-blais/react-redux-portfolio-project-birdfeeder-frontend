@@ -29,7 +29,6 @@ class DayForm extends React.Component {
 
   state = {
     date: "",
-    // I think the following sometimes fires before there is anything ready?
     birds: this.availableBirds().reduce(
       (birds, bird) => ({ ...birds, [bird.id]: false }), {}
     )
@@ -57,7 +56,6 @@ class DayForm extends React.Component {
       date: this.state.date,
       bird_ids: birdIds 
     }
-    // console.log(dayData)
     this.props.createDay(dayData)
     this.setState({
       date: ""
@@ -87,7 +85,6 @@ class DayForm extends React.Component {
       </div>
     )
   }
-
 }
 
 const mapStateToProps = state => { 

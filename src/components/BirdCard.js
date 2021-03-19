@@ -32,7 +32,6 @@ const BirdCard = (props) => {
       </div>
     </Link>
   )
-
 }
 
 export default BirdCard

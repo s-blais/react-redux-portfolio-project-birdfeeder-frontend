@@ -59,10 +59,8 @@ class BirdForm extends React.Component {
         <p>Copy & paste the bird's page URL</p>
         <p>Copy & paste the bird's illustration URL</p>
       </div>
-
     )
   }
-
 }
 
 export default connect(null, { createBird })(BirdForm)
